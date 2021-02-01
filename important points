@@ -1,0 +1,46 @@
+Look at bootstrap docs for more info on the points.
+
+Learned stuff -
+ navigation bar
+ Grid system
+ Containers - anything inside the div with the class 'container' will be automatically responsive it's max-width adjusts based on screen size.
+           and these will have a default padding to the body.
+
+           - 'container-fluid' - occupies full width of the screen and automatically responsive. but to have both padding and container fluid we can add extra padding manually.
+
+Buttons
+Carousel
+Cards
+
+Z-index
+ . natural stacking order in the html is that the elements(that have the position property set explicitly) that are at the top of the code are behind the elements that come after them in the z-axis plane
+  see the Z-index example on codeply. so as you go down the code in html the elements will be closer to you from the screen that the elements at the top.
+  so that is the narutal staking order in html. the elements have to have a postion property of absolute or relative or fixed for the above behavior to be true.
+
+  . so instead of having to change the order of the html code to change the stacking order we can use the z-index property.
+
+  . z-index only works if there is a postion property set explicitly. i. position must be absolute, relative or fixed. static position doesn't work as it is same as not defining the position property at all i.e default position
+
+  . check the stacking order flow chart pdf in the resources folder
+
+
+Media Queries
+
+
+Code Refactoring - Readability, modularity, efficiency, length
+
+              . Readability - easy to read for everybody and understand it easily.
+              .modularity - how easy is it to reuse your code. how easy is it to find the relevant piece of code that might be responsible for any issue in the website
+
+
+Advanced Css Selectors - Multilple Selectors - eg : h1, h2, h3, h4{} space between selectors is not mandatory
+
+                         Hierarchial Selectors - eg : #title .container-fluid{}  space between selectors is mandatory.
+                         applies the style for elements with class of container-fluid that is inside the element with id of title
+                         This Hierarchial Selectors should be used for parent and child element cases.
+
+                         Combined Selector - eg: div.container-fluid{} space must not be there between Selectors
+                         so here we are looking for a single element i.e find a div that also has a class of container-fluid
+
+                         if we give space between them then it will become a Hierarchial selector and will try to find an elements
+                         that have class of container-fluid which are inside of a div.

@@ -1,2 +1,1 @@
-# TinDog
-Tinder for Dogs. Kinda
+TinDog Starting Files
